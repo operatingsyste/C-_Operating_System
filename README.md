@@ -83,12 +83,32 @@ Hellow world 2023
 
   <h3>
 
-    MOV <br><br>
+    MOV 
 
     MOV PATH FILE_NAME
-    <br><br>
+    
 
     i want to copy main.cpp file in kernel folder so i will write :- FILE MOV kernel main.cpp
+</h3>
+
+<h3>
+
+    CREATE 
+
+    MOV <DIR OR FILE_NAME> FILE_DATA
+    
+
+    i want to create a file named s.txt with text hy user so i will write :- FILE CREATE s.txt hy user
+</h3>
+
+<h3>
+
+    DELETE
+
+    DELETE FILE_NAME
+    
+
+    i want to delete a file named s.txt so i will write :- FILE DELETE s.txt
 </h3>
     
 </p>
