@@ -6,6 +6,7 @@ Copyright (c) ghgltggamer
 */
 
 #include "lib/fozdtx.h"
+#include <stdio.h>
 
 using namespace fozdtx;
 
@@ -48,7 +49,133 @@ if (con == "tr_config"){
 		cout<<"3.) settings (#)"<<endl;
 		cout<<"4.) low level data [!]"<<endl;
 		
+		cout<<endl<<endl;
 		
+		int app_no;
+		
+		while (inf = true){
+			cout<<"Enter the program number to start : ";
+			cin>>app_no;
+			
+			 if (app_no == 1){
+			 	
+			 	
+			 	
+			 	// kernel
+			 	cout<<endl<<endl<<"-----------------Command Sector-------------"<<endl<<endl;
+			 	string txt;
+			 	for (int lines = 1;inf = true;lines++){
+			 		
+			 		cout<<"//";
+			 		cin>>txt;
+			 		
+			 		
+			 		
+			 		if (txt == "PRINT"){
+			 			
+			 			string PRINT;
+			 			getline(cin, PRINT);
+			 			cout<<PRINT<<endl<<endl;
+			 			
+			 			
+			 		}
+			 		if (txt == "FILE"){
+			 			
+			 			string FILE;
+			 			cin>>FILE;
+			 			if (FILE == "MOV"){
+			 				
+			 				
+			 				string DIR;
+			 				cin>>DIR;
+			 				
+			 				string FN;
+			 				cin>>FN;
+			 				ifstream mov(FN);
+			 				if (mov.is_open()){
+			 					
+			 					cout<<"getted file";
+			 					cout<<endl<<endl<<"Copying file data"<<endl<<endl<<"Processing data"<<endl<<endl;
+			 					
+			 					string process_data = DIR + "/"+ FN;
+			 					ofstream file_mov(process_data);
+			 					string FILE_DATA;
+			 					while (getline(mov, FILE_DATA)){
+			 						
+			 						file_mov<<FILE_DATA<<endl;
+			 						
+			 					}
+			 					
+			 					
+			 					
+			 				}
+			 				
+			 				
+			 				
+			 				
+			 				
+			 				else {
+			 					
+			 					cout<<"ERROR : FILE NOT FOUND"<<endl<<endl;
+			 					
+			 				}
+			 				
+			 			}
+			 			
+			 			else if (FILE == "DELETE"){
+			 					
+			 					
+			 					
+			 					char file_name[] = "";
+			 					gets(file_name);
+			 					if(remove(file_name) != 0){
+			 						
+			 						cout<<"FATAL ERROR";
+			 						
+			 					}
+			 					else {
+			 						
+			 					}
+			 					
+			 					
+			 					
+			 				}
+			 				
+			 				else if (FILE == "CREATE"){
+			 					
+			 					string file_n;
+			 					cin>>file_n;
+			 					
+			 					
+			 					
+			 					
+			 					string file_d;
+			 					getline(cin, file_d);
+			 					
+			 					ofstream file_create(file_n);
+			 					file_create<<file_d;
+			 					
+			 				}
+			 			
+			 		}
+			 		
+			 		
+			 		
+			 		
+			 		
+			 	}
+			 	
+			 	
+			 	
+			 	
+			 	
+			 	
+			 	
+			 	
+			 	
+			 	
+			 }
+		}
 		break;
 	}
 	else {
