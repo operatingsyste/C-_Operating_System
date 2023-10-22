@@ -48,5 +48,50 @@ Hellow world 2023
 </p>
 
 
+<br><br>
+
+
+<hr>
+
+
+<br>
+
+
+<h2>
+
+  FILE
+</h2>
+
+<p>
+
+  FILE is used to create ,delete , copy or cut a file using DIO's command sector . It has 3 arguments MOV (USED TO COPY A FILE) , DELETE (USED TO DELETE A CREATED FILE) , CREATE (USE TO CREATE A FILE) <br><br>
+
+  <h3>
+    Syntax
+  </h3>
+
+  <p>
+    FILE <ARGUMENTS> <WORK>
+  </p>
+
+  <br>
+
+
+  <br>
+
+
+
+  <h3>
+
+    MOV <br><br>
+
+    MOV PATH FILE_NAME
+    <br><br>
+
+    i want to copy main.cpp file in kernel folder so i will write :- FILE MOV kernel main.cpp
+</h3>
+    
+</p>
+
   
 </p>
